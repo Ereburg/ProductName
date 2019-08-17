@@ -32,22 +32,39 @@ a {
 /* стили для первого блока (header) */
 
 .header {
-    padding: 40px 0px;
+    position: relative;
+    padding: 80px 0px;
+    background: url(../images/2644868.svg) center bottom no-repeat,
+    url(../images/mounts.svg) center bottom no-repeat,
+    url(../images/sky.svg) center bottom no-repeat,
+    linear-gradient(45deg, #ecc14b, #ff3985);
+    
+    background-size: cover;
+    height: 720px;
+
 }
 
 .container {
-    max-width: 1210px;
+    /* max-width: 1210px; */
     margin: 0 auto;
 }
 
 .header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
+    height: 100%;
     padding: 0px 15px;
+    /* background: linear-gradient(to bottom, #3030301f, #0e0d0d ) ; */
 }
 
 .text-container {
@@ -74,7 +91,7 @@ a {
 }
 
 .header-img {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     max-width: 470px;
     width: 100%;
     height: 220px;
@@ -132,7 +149,7 @@ a {
 }
 
 .blue {
-    background-color: #2e3133;
+    /* background-color: #2e3133; */
 }
 
 .section-text-container {
@@ -610,6 +627,11 @@ a {
     transition: all .5s ease;
 }
 
+.product-btn:focus,
+.form-btn:focus {
+    outline: none;
+}
+
 
 @media screen and (max-width: 973px) {
     .product-item:nth-child(3) {
@@ -817,4 +839,13 @@ textarea {
     color: #445161;
     font-size: 12px;
     line-height: 24px;
+}
+
+
+.full {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/mnt.svg) center no-repeat;
+    background-size: contain;
+    fill: #161516;
 }
