@@ -624,6 +624,7 @@ textarea {
 textarea {
     height: 170px;
     padding-top: 7px;
+    resize: vertical;
 }
 
 .form-btn {
